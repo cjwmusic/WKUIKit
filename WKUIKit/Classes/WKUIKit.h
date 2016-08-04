@@ -9,5 +9,6 @@
 #ifndef WKUIKit_h
 #define WKUIKit_h
 
+#import "UIView+WKUIKit.h"
 
 #endif /* WKUIKit_h */
