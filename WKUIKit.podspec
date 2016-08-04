@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WKUIKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WKUIKit.'
+  s.summary          = 'WKUIKit provide some categories of UIView for easy to layout your views~'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/WKUIKit'
+  s.homepage         = 'https://github.com/cjwmusic/WKUIKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wukong' => 'caijunwei1990@163.com' }

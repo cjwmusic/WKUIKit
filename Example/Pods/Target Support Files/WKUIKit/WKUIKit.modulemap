@@ -1,0 +1,6 @@
+framework module WKUIKit {
+  umbrella header "WKUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
