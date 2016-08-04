@@ -11,6 +11,8 @@
 		3BA6B4B6A84A8E19AD4A52AE2AF1B65D /* WKUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C96033C729A2CD25C4D073635A71F /* WKUIKit-dummy.m */; };
 		4958B45B39951DAF6A4A923DB804FD96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		5F90330F2B8E3E6A1A92365435CB7117 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE5F146F2B1347CEC5B8F65DD266C39 /* ReplaceMe.m */; };
+		678D7ECA1D53338300207E1E /* UIView+WKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 678D7EC81D53338300207E1E /* UIView+WKUIKit.h */; };
+		678D7ECB1D53338300207E1E /* UIView+WKUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 678D7EC91D53338300207E1E /* UIView+WKUIKit.m */; };
 		78B7710C51F567C8D839B198060CCF75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		81A096030550899FF0808A05D917A631 /* Pods-WKUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 684553D8B2F8FDCADB6CC74487828DBD /* Pods-WKUIKit_Example-dummy.m */; };
 		8339FD56B99CC6792F49EDB2AF12B846 /* Pods-WKUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD0800E59A68DC0037614E6798D9F37 /* Pods-WKUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +45,8 @@
 		527CF1B7AA17B2C567DD1777CEA47BFD /* Pods_WKUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WKUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EA4F189279DDB0AF567849031A449D /* Pods-WKUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WKUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		65769245B9F8A693E74972BB7B099EC5 /* WKUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKUIKit-prefix.pch"; sourceTree = "<group>"; };
+		678D7EC81D53338300207E1E /* UIView+WKUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKUIKit.h"; sourceTree = "<group>"; };
+		678D7EC91D53338300207E1E /* UIView+WKUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKUIKit.m"; sourceTree = "<group>"; };
 		684553D8B2F8FDCADB6CC74487828DBD /* Pods-WKUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WKUIKit_Example-dummy.m"; sourceTree = "<group>"; };
 		6EE5F146F2B1347CEC5B8F65DD266C39 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		70FE4C912B49421E5E9BFB135ECE2678 /* Pods-WKUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WKUIKit_Tests.modulemap"; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				6EE5F146F2B1347CEC5B8F65DD266C39 /* ReplaceMe.m */,
+				678D7EC81D53338300207E1E /* UIView+WKUIKit.h */,
+				678D7EC91D53338300207E1E /* UIView+WKUIKit.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678D7ECA1D53338300207E1E /* UIView+WKUIKit.h in Headers */,
 				8FB4D81242078EB7A553E84C3AB2DFFD /* Pods-WKUIKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81A096030550899FF0808A05D917A631 /* Pods-WKUIKit_Example-dummy.m in Sources */,
+				678D7ECB1D53338300207E1E /* UIView+WKUIKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
