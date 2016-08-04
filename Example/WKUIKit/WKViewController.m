@@ -7,6 +7,7 @@
 //
 
 #import "WKViewController.h"
+#import "WKUIKit.h"
 
 @interface WKViewController ()
 
@@ -17,13 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    //self.view.top = 15;
+    //self.view.left = 10;
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

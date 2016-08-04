@@ -1,9 +1,9 @@
 {
   "name": "WKUIKit",
-  "version": "0.1.0",
-  "summary": "A short description of WKUIKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/WKUIKit",
+  "version": "0.1.1",
+  "summary": "WKUIKit provide some categories of UIView for easy to layout your views~",
+  "description": "WKUIKit provide some categories of UIView for easy to layout your views~,Enjoy~",
+  "homepage": "https://github.com/cjwmusic/WKUIKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "wukong": "caijunwei1990@163.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/WKUIKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/cjwmusic/WKUIKit.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

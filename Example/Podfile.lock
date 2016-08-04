@@ -1,5 +1,5 @@
 PODS:
-  - WKUIKit (0.1.0)
+  - WKUIKit (0.1.1)
 
 DEPENDENCIES:
   - WKUIKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  WKUIKit: fe3a6baae7a97eb863698bf1c80e7c83df814a96
+  WKUIKit: f852f464136289abdff793475c35285e3a1716ea
 
 PODFILE CHECKSUM: 758e8b4bf80911e17aaf2cf696eda5099ea06212
 
