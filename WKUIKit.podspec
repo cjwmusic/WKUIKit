@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WKUIKit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'WKUIKit provide some categories of UIView for easy to layout your views~'
 
   s.description      = "WKUIKit provide some categories of UIView for easy to layout your views~,Enjoy~"

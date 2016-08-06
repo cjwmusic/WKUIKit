@@ -12,11 +12,11 @@
 @implementation UIColor (WKUIKit)
 
 + (UIColor *)colorWithHexString:(NSString *)colorString {
-    return [UIColor hx_colorWithHexString:colorString];
+    return [UIColor hx_colorWithHexRGBAString:colorString];
 }
 
 + (UIColor *)colorWithHexString:(NSString *)colorString alpha:(CGFloat)alpha {
-    return [UIColor hx_colorWithHexString:colorString alpha:alpha];
+    return [UIColor hx_colorWithHexRGBAString:colorString alpha:alpha];
 }
 
 @end
