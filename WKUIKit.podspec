@@ -11,12 +11,6 @@ Pod::Spec.new do |s|
   s.version          = '0.1.2'
   s.summary          = 'WKUIKit provide some categories of UIView for easy to layout your views~'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = "WKUIKit provide some categories of UIView for easy to layout your views~,Enjoy~"
 
   s.homepage         = 'https://github.com/cjwmusic/WKUIKit'
@@ -24,17 +18,12 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wukong' => 'caijunwei1990@163.com' }
   s.source           = { :git => 'https://github.com/cjwmusic/WKUIKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'WKUIKit/Classes/*'
-  
-  # s.resource_bundles = {
-  #   'WKUIKit' => ['WKUIKit/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.frameworks = 'UIKit'
