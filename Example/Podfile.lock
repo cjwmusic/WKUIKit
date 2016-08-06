@@ -1,0 +1,24 @@
+PODS:
+  - HexColors (4.0.0)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - WKUIKit (0.1.2):
+    - HexColors
+    - SDWebImage
+
+DEPENDENCIES:
+  - WKUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  WKUIKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  WKUIKit: d6ac03b9f8ea5932483005511283935e894f7f47
+
+PODFILE CHECKSUM: 4752110684293feb674f0bafdb246e4b21c3df17
+
+COCOAPODS: 1.0.1
