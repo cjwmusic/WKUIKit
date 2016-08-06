@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'WKUIKit_Example' do
   pod 'WKUIKit', :path => '../'
+  pod 'HexColors'
+  pod 'SDWebImage'
 
   target 'WKUIKit_Tests' do
     inherit! :search_paths
