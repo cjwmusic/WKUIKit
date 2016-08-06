@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+
+target :Example do
+
+pod 'WKUIKit' :path  => '../'
+pod 'SDWebImage'
+pod 'HexColors'
+
+end
