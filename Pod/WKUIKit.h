@@ -13,5 +13,6 @@
 #import "UIColor+WKUIKit.h"
 
 #import "WKImageView.h"
+#import "WKButton.h"
 
 #endif /* WKUIKit_h */
