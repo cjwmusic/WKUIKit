@@ -11,8 +11,8 @@
 
 @implementation WKImageView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
+- (instancetype)init {
+    if (self = [super init]) {
         self.contentMode = UIViewContentModeScaleAspectFill;
         self.clipsToBounds = YES;
     }

@@ -10,4 +10,6 @@
 
 @interface WKLoopPageView : UIView
 
+@property (nonatomic, strong) NSArray *imageUrls;
+
 @end

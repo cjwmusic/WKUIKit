@@ -14,5 +14,6 @@
 
 #import "WKImageView.h"
 #import "WKButton.h"
+#import "WKLoopPageView.h"
 
 #endif /* WKUIKit_h */
