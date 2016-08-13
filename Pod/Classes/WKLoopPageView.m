@@ -44,20 +44,30 @@
     }];
     
     self.scrollView.contentSize = CGSizeMake(self.width * kImageViewCount, self.height);
+    
+    
+    [self refreshImageView];
 }
 
 - (void)refreshImageView {
     [self.scrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj isKindOfClass:[WKImageView class]]) {
-            WKImageView *imageView = (WKImageView *)obj;
             
-            NSInteger *index = self.pageControl.currentPage;
+            WKImageView *imageView = (WKImageView *)obj;
+            NSInteger index = self.pageControl.currentPage;
             
             if (idx == 0) {
-                index --;
+                index--;
                 
-            } else if(idx == (kImageViewCount - 1)) {
-                index ++;
+            } else if(idx == 2) {
+                index++;
+            }
+            
+            if (index < 0) {
+                index = self.pageControl.numberOfPages - 1;
+                
+            }else if(index >= self.pageControl.numberOfPages ) {
+                index = 0;
             }
             
             imageView.tag = index;
@@ -66,7 +76,6 @@
     }];
     
     self.scrollView.contentOffset = CGPointMake(self.scrollView.width, 0);
-    
 }
 
 - (void)next {
@@ -82,6 +91,7 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.pagingEnabled = YES;
+        _scrollView.delegate = self;
         
         for (int i = 0; i < kImageViewCount; i++) {
             WKImageView *imageView = [[WKImageView alloc] init];
@@ -114,7 +124,7 @@
     
     [self stopTimer];
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(next) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(next) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
@@ -132,9 +142,7 @@
     [self stopTimer];
 }
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView
-                     withVelocity:(CGPoint)velocity
-              targetContentOffset:(inout CGPoint *)targetContentOffset {
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     [self startTimer];
 }
 
@@ -144,7 +152,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
-    __block CGFloat minDistance = 0;
+    __block CGFloat minDistance = MAXFLOAT;
     __block CGFloat distance = 0;
     __block NSInteger page = 0;
     
@@ -162,7 +170,7 @@
     }];
     
     
-    self.pageControl.currentPage = 0;
+    self.pageControl.currentPage = page;
 }
 
 //timer动画调用结束
